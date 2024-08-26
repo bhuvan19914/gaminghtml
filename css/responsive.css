@@ -1,0 +1,153 @@
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1175px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media(max-width:991px)
+{
+	.mainlogo {
+		font-size: 35px;
+		line-height: 40px;
+	}
+	header .headerbtns li a {
+		padding: 11px 13px 9px;
+	}
+	.price-block-left h3 {
+		font-size: 35px;
+		line-height: 41px;
+	}
+	.countdown div span {
+		font-size: 19px;
+		line-height: 26px;
+	}
+	.countdown div {
+		min-width: 62px;
+	}
+	.price-block-right form {
+		padding: 45px 30px;
+	}
+	.price-block-left ul li span {
+		font-size: 21px;
+		line-height: 22px;
+	}
+	.price-block-left ul li,.usdpay-block-single label {
+		font-size: 15px;
+	}
+	.listprice-block table th, .listprice-block table td {
+		font-size: 16px;
+	}
+	.price-block-right form h4,.usdpay-block-single span {
+		font-size: 24px;
+	}
+	.price-btnsblock-single button {
+		font-size: 18px;
+	}
+	.usdraised-block {
+		margin: 20px 0 0;
+	}
+	.helpblock p {
+		font-size: 13px;
+	}
+	.investors-block {
+		margin: 70px 0;
+		padding: 0;
+		min-height: inherit;
+		background: none;
+	}
+	.investors-block-inner {
+		width: 100%;
+	}
+	.investors-block-inner h4,.roadmap-block .col-md-12 > h4 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+}
+
+@media(max-width:767px)
+{
+	header .headerbtns li a {
+		padding: 11px 27px 9px;
+	}
+	.socialicons {
+		margin: 0px auto 20px;
+		display: table;
+	}
+	.headerbtns {
+		margin: 20px auto 0;
+		float: none;
+		display: table;
+	}
+	.pgcontent {
+		padding: 50px 0;
+	}
+	.price-block-right {
+		margin: 50px 0 0;
+	}
+	.investors-block-inner h4,.roadmap-block .col-md-12 > h4 {
+		font-size: 32px;
+		line-height: 37px;
+		width: 100%;
+	}
+
+	.timeline ol,
+	.timeline ol li {
+	  width: auto;
+	}
+  
+	.timeline ol {
+	  padding: 0;
+	  transform: none !important;
+	}
+  
+	.timeline ol li {
+	  display: block;
+	  height: auto;
+	  background: transparent;
+	}
+  
+	.timeline ol li:first-child {
+	  margin-top: 25px;
+	  width: auto;
+	}
+  
+	.timeline ol li:not(:first-child) {
+	  margin-left: auto;
+	}
+  
+	.timeline ol li div {
+	  position: static;
+	  width: 94%;
+	  height: auto !important;
+	  margin: 0 auto 35px;
+	}
+  
+	.timeline ol li:nth-child(odd) div {
+	  transform: none;
+	}
+  
+	.timeline ol li::before,.timeline ol li::after,.timeline .arrows {
+		display: none;
+	}
+	.footer-menu li {
+		padding: 0 15px;
+	}
+}
+
+@media(max-width:480px)
+{
+	.price-block-right form {
+		padding: 45px 15px;
+	}
+	footer {
+		padding: 40px 0;
+		background: #161616;
+	}
+	.footer-menu li {
+		margin: 5px 0;
+	}
+}

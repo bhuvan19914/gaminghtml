@@ -1,0 +1,968 @@
+html,body
+{
+  height: 100%;
+}
+body
+{
+    overflow-x:hidden;
+	  background-color:#000 !important;
+    background-image: url(../images/mainbg.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body,.entry-content, .entry-summary,h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,ul, ol,.widget-area 
+{
+  font-family: "Roboto", sans-serif;
+}
+a
+{
+	text-decoration: none !important;
+	outline:none !important;
+}
+ul,ol
+{
+  list-style: none;
+}
+
+
+/* HEADER CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.site-header
+{
+  padding:25px 0 10px 0;
+  background-image: url(../images/headerbg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: auto; 
+}
+.site-header .row
+{
+  align-items: center;
+}
+.socialicons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.socialicons li {
+  width:50px;
+  height:40px;
+  float: left;
+  margin:0 15px 0 0;
+  filter: drop-shadow(0 0 5px rgba(255,184,0,.7));
+}
+.socialicons li span {
+  width:100%;
+  height:100%;
+  float: left;
+  padding: 1px;
+  background-color: #F4BF00;
+  clip-path: polygon(0% 13px, 13px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+}
+.socialicons li a
+{
+  clip-path: polygon(0% 13px, 13px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+  background-color: #111717;
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.socialicons li a::after
+{
+  clip-path: polygon(0% 27px, 0% 12px, 12px 0%, calc(100% - 10px) 0%, calc(100% - 10px) 1px, 13px 1px, 1px 13px, 1px 27px);
+  position: absolute;
+  content: "";
+  background: #F4BF00;
+  left: 2px;
+  top: 2px;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+.mainlogo
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+  color: rgba(244, 198, 38, 1);
+  margin: 0;
+  text-align: center;
+}
+
+.headerbtns {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  float: right;
+}
+.headerbtns li {
+    float: left;
+    margin:0 0 0 15px;
+    filter: drop-shadow(0 0 5px rgba(255,184,0,.7));
+}
+.headerbtns li:first-child {
+  margin:0;
+}
+.headerbtns li span {
+    float: left;
+    padding: 1px;
+    background-color: #F4BF00;
+    clip-path: polygon(0% 13px, 13px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+}
+.headerbtns li a
+{
+    clip-path: polygon(0% 13px, 13px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+    background-color: #111717;
+    float: left;
+    position: relative;
+    padding: 11px 27px 9px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #F4BF00;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+}
+.headerbtns li:last-child a {
+  background-color: transparent;
+  color:#111717;
+}
+.headerbtns li:last-child a::after {
+  background: #111717;
+}
+.headerbtns li a::before
+{
+    clip-path: polygon(0% 22px, 0% 12px, 12px 0%, 40% 0%, 40% 1px, 13px 1px, 1px 13px, 1px 22px);
+    position: absolute;
+    content: "";
+    background: #F4BF00;
+    left: 2px;
+    top: 2px;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+.headerbtns li a::after
+{
+    clip-path: polygon(100% calc(100% - 22px), 100% calc(100% - 7px), calc(100% - 7px) 100%, 50% 100%, 50% calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) calc(100% - 22px));
+    position: absolute;
+    content: "";
+    background: #F4BF00;
+    right: 2px;
+    bottom: 2px;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* MAIN CONTENT CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.pgcontent {
+  width: 100%;
+  padding: 70px 0 50px;
+}
+
+
+.price-block
+{
+  width:100%;
+}
+.price-block .row
+{
+  align-items: center;
+}
+.price-block-left label
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: rgba(244, 198, 38, 1);
+}
+.price-block-left h3
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62.4px;
+  text-align: left;
+  margin: 15px 0 30px;
+  color:#fff;
+}
+.price-block-left ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  float: right;
+}
+.price-block-left ul li {
+    float: left;
+    margin:0 0 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: rgba(208, 208, 208, 1);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 75px;
+}
+.price-block-left ul li span
+{
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  width:100%;
+  float: left;
+  margin: 0 0 5px;
+}
+.price-block-left ul li:nth-child(1) {
+  background-image: url(../images/priceblock-icon1.png);
+}
+.price-block-left ul li:nth-child(2) {
+  background-image: url(../images/priceblock-icon2.png);
+}
+.price-block-left ul li:nth-child(3) {
+  background-image: url(../images/priceblock-icon3.png);
+}
+.price-block-left ul li:last-child {
+  margin:0;
+}
+
+
+
+.price-block-right
+{
+  float: left;
+  width:100%;
+  filter: drop-shadow(0 0 25px rgba(255,184,0,.4));
+}
+.price-block-right form {
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: 60px 30px;
+  background: rgba(244,191,0, 1);
+  clip-path: polygon(0% 13px, 13px 0%, 100% 0%, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0% 100%);
+}
+.price-block-right form::before {
+  clip-path: polygon(0% 13px, 13px 0%, 100% 0%, 100% calc(100% - 35px), calc(100% - 35px) 100%, 0% 100%);
+  background-color: rgba(17,23,23,1);
+  right:1px;
+  bottom:1px;
+  left:1px;
+  top:1px;
+  z-index: -9;
+  content:"";
+  position: absolute;
+}
+
+.price-block-right form h4
+{
+  background: -webkit-linear-gradient(0deg, #F4BF00 0%, #F7A617 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+  width:100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown div
+{
+  margin: 0 5px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  min-width: 82px;
+}
+.countdown div span {
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: 4px 12px;
+  background-color: #F4BF00;
+  position: relative;
+  clip-path: polygon(0% 8px, 8px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #F8D84C;
+  margin: 0 0 7px;
+}
+.countdown div span::before {
+  background: -webkit-linear-gradient(90deg, #44423D 0%, #372F15 100%);
+  right:1px;
+  bottom:1px;
+  left:1px;
+  top:1px;
+  z-index: -9;
+  content:"";
+  position: absolute;
+  clip-path: polygon(0% 8px, 8px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+}
+
+.usdraised-block {
+  margin: 20px 25px 0px;
+  display: flex;
+  align-items: center;
+}
+.usdraised-block .progress {
+  height: 5px;
+  font-size: 0;
+  background-color: #373737;
+  flex: 1;
+}
+.usdraised-block .progress .progress-bar {
+  background: linear-gradient(108.91deg, #FFC700 12.7%, #FF6B00 86.37%),
+linear-gradient(0deg, rgba(131, 131, 131, 0.1), rgba(131, 131, 131, 0.1)),
+linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+}
+.usdraised-block span {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: center;
+  color: #FFFFFF99;
+  margin: 0 0 0 15px;
+}
+.usdraised-block span label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  background: linear-gradient(162.56deg, #FFC700 4.37%, #FF8A00 97.43%),
+linear-gradient(0deg, rgba(131, 131, 131, 0.1), rgba(131, 131, 131, 0.1)),
+linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 0 5px;
+}
+
+
+
+.listprice-block {
+  margin: 20px 0 0;
+}
+.listprice-block table {
+  margin: 0;
+  border: 0;
+  text-align: center;
+}
+.listprice-block table tbody {
+  background-color: #F4BF00;
+  position: relative;
+  clip-path: polygon(0% 8px, 8px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+  color: #F8D84C;
+}
+.listprice-block table tbody::before {
+  background: #232323;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  top: 1px;
+  z-index: -9;
+  content: "";
+  position: absolute;
+  clip-path: polygon(0% 8px, 8px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+}
+.listprice-block table tbody::after {
+  background: #F4BF00;
+  right: 2px;
+  bottom: 2px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% calc(100% - 22px), 100% calc(100% - 7px), calc(100% - 7px) 100%, 90% 100%, 90% calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) calc(100% - 22px));
+}
+.listprice-block table th,.listprice-block table td {
+  padding: 7px;
+  font-size: 18px;
+  color: #9C9C9C;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  box-shadow: none;
+  background: transparent;
+  border: 0;
+  font-weight: 400;
+  line-height: 21px;
+}
+.listprice-block table td
+{
+padding: 15px 5px 13px;
+}
+.listprice-block table td span {
+  color: #46A24B;
+}
+
+.usdpay-block
+{
+    background-color: #F4BF00;
+    position: relative;
+    clip-path: polygon(0% 8px, 8px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+    margin:20px 0 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.usdpay-block::before {
+    background: #232323;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    top: 1px;
+    z-index: -9;
+    content: "";
+    position: absolute;
+    clip-path: polygon(0% 8px, 8px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+}
+.usdpay-block::after {
+    background: #F4BF00;
+    right: 2px;
+    bottom: 2px;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% calc(100% - 22px), 100% calc(100% - 7px), calc(100% - 7px) 100%, 90% 100%, 90% calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) calc(100% - 22px));
+}
+.usdpay-block-single
+{
+  width:50%;
+  padding: 13px 5px;
+}
+.usdpay-block-single label
+{
+  font-size: 18px;
+  color: #9C9C9C;
+  font-weight: 400;
+  line-height: 21px;
+  width:100%;
+}
+.usdpay-block-single span {
+  font-size: 26px;
+  color: #ABABAB;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 5px auto 0;
+  display: table;
+}
+.usdpay-block-single:last-child
+{
+  border-left:1px solid #F4BF00;
+  position: relative;
+}
+.usdpay-block-single:last-child::before
+{
+  background-image: url(../images/equal-ion.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  left: -14px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.usdpay-block-single:last-child span
+{
+  background-image: url(../images/token-icon.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-left: 32px;
+}
+
+
+.price-block-right form .form-check {
+  margin: 15px 0 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+.price-block-right form .form-check-label{
+  font-size: 15px;
+  color: #9C9C9C;
+  font-weight: 400;
+  line-height: 15px;
+}
+.price-block-right form .form-check-input {
+  border: 0px;
+  background-color: #7D6616;
+  position: relative;
+  clip-path: polygon(0% 5px, 5px 0%, 98% 0px, 100% 2%, 100% 98%, 98% 100%, 2% 100%, 0% 98%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 18px;
+  height: 18px;
+  margin: auto;
+  border-radius: 0px;
+}
+.price-block-right form .form-check span {
+  border:0px;
+  background-color: #F4BF00;
+  position: relative;
+  clip-path: polygon(0% 5px, 5px 0%, 98% 0px, 100% 2%, 100% 98%, 98% 100%, 2% 100%, 0% 98%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: auto;
+  float: left;
+  padding: 1px;
+}
+
+
+.helpblock {
+  margin:10px 0 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.helpblock p {
+  font-size: 15px;
+  color: #9C9C9C;
+  font-weight: 400;
+  line-height: 20px;
+  float: left;
+  width: 100%;
+  margin: 10px 0 5px;
+}
+.helpblock a {
+  color: #F4BF00;
+}
+
+
+.price-btnsblock {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 0;
+  float: left;
+  align-items: center;
+}
+.price-btnsblock-single
+{
+  float: left;
+  width: 48.5%;
+  padding: 1px;
+  background-color: #F4BF00;
+  position: relative;
+  clip-path: polygon(0% 13px, 13px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+}
+.price-btnsblock-single:last-child
+{
+  margin-left: auto;
+}
+.price-btnsblock-single button
+{
+  clip-path: polygon(0% 13px, 13px 0%, 98% 0px, 100% 2%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 2% 100%, 0% 98%);
+  background-color: #232323;
+  float: left;
+  position: relative;
+  padding: 11px 15px 9px;
+  width: 100%;
+  line-height: 24px;
+  font-size: 20px;
+  color: #9C9C9C;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  border: 0px;
+}
+.price-btnsblock-single::before
+{
+  clip-path: polygon(0% 22px, 0% 12px, 12px 0%, 40% 0%, 40% 1px, 13px 1px, 1px 13px, 1px 22px);
+  position: absolute;
+  content: "";
+  background: #F4BF00;
+  left: 2px;
+  top: 2px;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+.price-btnsblock-single::after
+{
+  clip-path: polygon(100% calc(100% - 22px), 100% calc(100% - 7px), calc(100% - 7px) 100%, 50% 100%, 50% calc(100% - 1px), calc(100% - 8px) calc(100% - 1px), calc(100% - 1px) calc(100% - 8px), calc(100% - 1px) calc(100% - 22px));
+  position: absolute;
+  content: "";
+  background: #F4BF00;
+  right: 2px;
+  bottom: 2px;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.investors-block {
+  margin: 80px 0 40px;
+  padding: 60px 0;
+  width: 100%;
+  background-image: url(../images/investors-blockbg.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 600px;
+  min-height: 600px;
+}
+.investors-block-inner
+{
+  width: 67%;
+  float: right;
+}
+.investors-block-inner h4
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 70px;
+  text-align: center;
+  color: rgba(244, 198, 38, 1);
+}
+.investors-block-inner p
+{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+  color:#B8B8BA;
+}
+.investors-block-inner .table-responsive {
+  margin: 25px 0 0;
+}
+.investors-block-inner table
+{
+  border-spacing: 0 25px;
+  border-collapse: separate;
+  min-width: 650px;
+}
+.investors-block-inner table tr {
+  border: 0;
+  position: relative;
+  vertical-align: middle;
+}
+.investors-block-inner table tr:nth-child(2n-1)::before {
+  background: rgb(7,4,1);
+  background: linear-gradient(90deg, rgba(7,4,1,1) 0%, rgba(98,79,15,1) 50%, rgba(7,4,1,1) 100%);
+  position: absolute;
+  content: "";  
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+}
+.investors-block-inner table tr:nth-child(2n)::before {
+  background: rgb(19,15,3);
+  background: linear-gradient(0deg, rgba(19,15,3,1) 0%, rgba(0,0,0,1) 100%); 
+  position: absolute;
+  content: "";  
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+}
+.investors-block-inner table tr::after {
+  background: linear-gradient(90deg, rgba(244, 198, 38, 1) 0%, rgba(98,79,15,1) 50%); 
+  clip-path: polygon(0% 100%, 40px 100%, 50px calc(100% - 7px), 50% calc(100% - 7px), 50% calc(100% - 6px), 50px calc(100% - 6px), 40px calc(100% - 1px),0% calc(100% - 1px));
+  content: "";  
+  left:0;
+  bottom: -6px;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  position: absolute;
+}
+.investors-block-inner table tr:nth-child(2n)::after {
+  background: linear-gradient(90deg, rgba(244, 198, 38, 1) 0%, rgba(18,14,3,1) 50%); 
+}
+.investors-block-inner table tr td {
+  border: 0;
+  color:#E6E6E8;
+  padding: 5px 5px 0px;
+}
+.investors-block-inner table tr td img {
+width: 45px;
+}
+.investors-block-inner table tr:last-child::before,.investors-block-inner table tr:last-child::after
+{
+  background: none;
+}
+.investors-block-inner table tr:last-child td {
+  border: 0;
+  color:#7C7C7C;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* FOOTER CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer
+{
+  width: 100%;
+  background-image: url(../images/footerbg.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 291px;
+  background-color: #161616;
+  padding: 14px 0 30px;
+}
+footer .col-md-12 > img
+{
+  margin:auto;
+  display: table;
+}
+footer .headerbtns {
+  float: none;
+  display: table;
+  margin: 30px auto;
+}
+
+.footer-menu {
+  margin: 0px auto;
+  display: table;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.footer-menu li {
+  color: #fff;
+  display: inline-block;
+  padding: 0 20px;
+  border-right: 1px solid #333;
+}
+.footer-menu li:first-child {
+  padding-left: 0;
+}
+.footer-menu li:last-child {
+  padding-right: 0;
+  border: 0;
+}
+.footer-menu li a  {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.copyright-block {
+  float: left;
+  width: 100%;
+  margin: 22px 0 0;
+  text-align: center;
+  color: #919191;
+}
+.copyright-block a {
+  margin: 0 5px;
+  color: #919191;
+}
+
+
+
+/* ROADMAP BLOCK CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.roadmap-block
+{
+  width:100%;
+}
+.roadmap-block .col-md-12
+{
+  display: flex;
+  align-items: center;
+}
+.roadmap-block .col-md-12 > h4
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 70px;
+  text-align: center;
+  color: rgba(244, 198, 38, 1);
+  float: left;
+  margin: 0;
+}
+.timeline {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+.timeline .arrows {
+  margin-left: auto;
+}
+.timeline .arrow {
+  background: #000;
+  border: 1px solid #606025;
+  box-shadow: 0px 0px 9px #DAC446;
+  border-radius: 0px;
+  color: #FFC700;
+  padding: 5px 10px;
+}
+.timeline .arrow.arrow__prev {
+margin-right: 4px;
+}
+.timeline .disabled {
+  opacity: 0.5;
+}
+
+
+.timeline ol {
+  font-size: 0;
+  width: 100vw;
+  padding: 200px 0;
+  transition: all 1s;
+  margin: 40px 0;
+}
+.timeline ol li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 235px;
+  height: 2px;
+  background: #FFC700;
+}
+.timeline ol li:first-child {
+  width: 40px;
+}
+.timeline ol li:last-child {
+  width: 280px;
+}
+.timeline ol li:not(:first-child) {
+  margin-left: 14px;
+}
+.timeline ol li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  bottom: 0;
+  width: 45px;
+  height: 45px;
+  transform: translateY(-50%);
+  background-image: url(../images/plus-icon.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 45px;
+  z-index: 9;
+}
+.timeline ol li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: calc(50% + 30px);
+  right: calc(100% - 3px);
+  width: 100%;
+  height: 45px;
+  transform: translateY(-50%);
+  background-image: url(../images/roadmap-line.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.timeline ol li:nth-child(1)::before,.timeline ol li:nth-child(2)::before {
+  display: none;
+}
+.timeline ol li:nth-child(odd)::before {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  bottom: calc(50% + 9px);
+  top: auto;
+}
+.timeline ol li div {
+  position: absolute;
+  left: calc(100% + 7px);
+  width: 280px;
+  font-size: 13px;
+  white-space: normal;
+  color: #999999;
+  text-align: center;
+}
+.timeline ol li:nth-child(odd) div {
+  top: -50px;
+  transform: translateY(-100%);
+}
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 50px);
+}
+
+.timeline ol li div h4
+{
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  width:100%;
+  float: left;
+  color: #F4C625;
+  margin: 0;
+}
+.timeline ol li div span
+{
+font-size: 14px;
+font-weight: 400;
+float: left;
+line-height: 21px;
+text-align: center;
+width:100%;
+color: #FFFFFF;
+margin: 1px 0 5px;
+}
+.timeline ol li div span label
+{
+margin: 0;
+color: #F4C625;
+}
